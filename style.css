@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-main: 'Montserrat', 'Aptos', -apple-system, sans-serif;
+  --color-bg: #fafafa;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555;
+  --color-accent: #2a2a2a;
+  --color-link: #1a1a1a;
+  --color-link-hover: #666;
+  --color-border: #e0e0e0;
+  --color-code-bg: #f0f0f0;
+  --color-blockquote: #e8e8e8;
+  --max-width: 680px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-text);
+  background: var(--color-bg);
+  padding: 0 24px;
+}
+
+/* Header / Nav */
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 0 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--color-link-hover);
+}
+
+.site-tagline {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+/* Main content */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 0 80px;
+}
+
+/* Article */
+article {
+  margin-bottom: 64px;
+}
+
+.post-meta {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+article h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-accent);
+  margin-bottom: 32px;
+  letter-spacing: -0.01em;
+}
+
+article h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: 48px;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+article p {
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+article a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+article a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Lists */
+article ul, article ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+/* Bold */
+strong {
+  font-weight: 600;
+}
+
+/* Emphasis */
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 48px 0;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 3px solid var(--color-border);
+  padding-left: 20px;
+  margin: 24px 0;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+/* Inline code */
+code {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.88em;
+  background: var(--color-code-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Footer */
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 0 48px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+/* Post list (index page) */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.post-list-title a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.post-list-title a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.post-list-meta {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.post-list-excerpt {
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .site-header { padding: 32px 0 20px; }
+  main { padding: 32px 0 60px; }
+  article h1 { font-size: 1.5rem; }
+}
