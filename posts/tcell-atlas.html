@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Atlas Nobody Knew They Needed, and the Gap That Could Kill It | Greyzone Insights</title>
+  <meta name="description" content="A Nature paper maps the transcription factors that control T cell exhaustion in cancer. I went looking for what's missing. The answer is the entire path to the clinic.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../" class="site-title">Greyzone Insights</a>
+    <p class="site-tagline">Exploring the space between what's published and what's possible.</p>
+  </header>
+
+  <main>
+    <article>
+      <div class="post-meta">February 2026</div>
+      <h1>The Atlas Nobody Knew They Needed, and the Gap That Could Kill It</h1>
+
+      <p>Last week a paper landed in <em>Nature</em> that most people will read as another immunology advance. Researchers at the Salk Institute and UNC Chapel Hill built a map of how immune cells are controlled, used it to find two genes nobody had heard of, deleted them, and showed that tumours shrank.</p>
+
+      <p>The headline writes itself. &ldquo;Scientists discover new targets for cancer immunotherapy.&rdquo;</p>
+
+      <p>But the actual story is more interesting than that, and the thing nobody seems to be asking is the thing that will determine whether any of this reaches a patient.</p>
+
+      <hr>
+
+      <h2>The Problem That Wasn't Obvious</h2>
+
+      <p>Your immune system's killer T cells &mdash; CD8+ T cells &mdash; can exist in at least nine distinct states. Some hunt and kill. Some sit dormant as memory. Some exhaust themselves trying.</p>
+
+      <p>That last one is the problem. In cancer, T cells that spend too long fighting a tumour eventually become &ldquo;terminally exhausted.&rdquo; They stop killing. They stop responding to drugs. They're still physically there, surrounding the tumour, but they've given up.</p>
+
+      <p>The entire field of checkpoint immunotherapy &mdash; anti-PD-1, the drugs that have transformed cancer treatment over the past decade &mdash; works by waking up exhausted T cells. But there's a ceiling. The progenitor exhausted cells respond. The terminally exhausted ones don't. And in most solid tumours, the terminal ones are the majority.</p>
+
+      <p>Here's where it gets complicated. There's another T cell state called tissue-resident memory &mdash; TRM cells. These are the immune system's sentinels. They stay in tissues permanently, kill tumour cells on contact, and patients whose tumours contain more of them survive longer. TRM cells are protective. Terminally exhausted cells are dysfunctional.</p>
+
+      <p>And these two cell states &mdash; one that saves you, one that fails you &mdash; look almost identical at the molecular level. They sit in the same tissues. They express many of the same genes. They share the same transcription factors. Their open chromatin regions are highly correlated.</p>
+
+      <p>Nobody had a systematic way to tell the molecular programmes apart, which meant nobody could switch one off without risking the other.</p>
+
+      <hr>
+
+      <h2>What They Actually Built</h2>
+
+      <p>The team &mdash; led by Kay Chung, Susan Kaech, Wei Wang, and Justin Milner &mdash; didn't start with a hypothesis about a single gene. They started with a map.</p>
+
+      <p>They integrated RNA sequencing and chromatin accessibility data across 121 samples spanning all nine CD8+ T cell states. Then they fed this into a computational platform called Taiji, which uses a modified PageRank algorithm &mdash; the same mathematical idea that once powered Google's search engine &mdash; to infer not just which transcription factors are <em>expressed</em> in each cell state, but which are <em>active</em>. Expression and activity are different things. A gene can be transcribed but its protein blocked, or its binding sites closed. Taiji captures the network-level influence.</p>
+
+      <p>The result was a fingerprint for every transcription factor in every T cell state. 695 transcription factors. Nine states. A catalogue.</p>
+
+      <p>From this catalogue, they extracted two categories: single-state transcription factors (active in only one cell state) and multi-state factors (active across several). For the terminally exhausted state specifically, they identified 34 single-state factors. For TRM, 20. And 30 that were shared between both.</p>
+
+      <p>Among the terminal exhaustion-specific factors were two genes &mdash; <em>ZSCAN20</em> and <em>JDP2</em> &mdash; with no previously known function in T cells whatsoever.</p>
+
+      <hr>
+
+      <h2>The Experiment That Matters</h2>
+
+      <p>Having a catalogue is useful. Proving the catalogue is right is what makes it science.</p>
+
+      <p>They transduced T cells with CRISPR guides targeting 19 predicted transcription factors, transferred them into mice with chronic viral infections, and performed single-cell sequencing on 17,257 individual cells to see what happened. This is called Perturb-seq &mdash; you delete genes one at a time and watch what each deletion does to the entire transcriptional landscape.</p>
+
+      <p>Deleting <em>ZSCAN20</em> reduced terminal exhaustion by 54%. Deleting <em>JDP2</em> reduced it by 43%. Deleting multi-state factors like <em>HIC1</em> and <em>STAT3</em> reduced it by about 90% &mdash; but, crucially, also disrupted TRM formation.</p>
+
+      <p>That's the key distinction. When they ran the same experiment during acute infection &mdash; where T cells form protective memory rather than exhausting &mdash; the exhaustion-specific deletions left TRM cells completely intact. <em>ZSCAN20</em> knockout: no effect on memory formation. <em>JDP2</em> knockout: no effect. But <em>HIC1</em> knockout: TRM formation collapsed.</p>
+
+      <p>The atlas had predicted exactly this. Single-state factors could be deleted selectively. Multi-state factors could not.</p>
+
+      <p>They then validated in human T cells. CRISPR deletion of <em>ZSCAN20</em> and <em>JDP2</em> in human CD8+ T cells that were chronically stimulated for 18 days reduced the expression of inhibitory receptors PD-1, TIM-3, and LAG-3, and increased the production of effector cytokines.</p>
+
+      <p>And when they combined <em>ZSCAN20</em> or <em>JDP2</em> deletion with anti-PD-1 therapy in tumour-bearing mice, the combination significantly outperformed either alone.</p>
+
+      <hr>
+
+      <h2>What's Missing</h2>
+
+      <p>This is where it gets interesting &mdash; and where I think the real story lives.</p>
+
+      <p>There's a useful way to think about any system &mdash; whether it's a material, a drug target, or an immune cell programme. You ask three questions: what independent mechanisms hold it together? What feedback loops keep it stable? And what's conspicuously absent?</p>
+
+      <p><strong>What holds this system together:</strong> five independent pillars. The Taiji computational platform. The LCMV mouse infection models. The CRISPR-Perturb-seq validation system. The human pan-cancer single-cell atlas for cross-species confirmation. And the biological phenomenon itself &mdash; the TEXterm/TRM dichotomy.</p>
+
+      <p><strong>What feedback loops sustain it:</strong> four. The computational-experimental loop: atlas predicts, Perturb-seq validates, results refine the atlas. The therapeutic validation loop: TF knockout reduces exhaustion, improves effector function, shrinks tumours, confirming the target. The translational loop: mouse finding, human conservation check, human functional validation. And the selective decoupling loop: delete TEXterm factor, confirm TRM is preserved, demonstrate net benefit.</p>
+
+      <p><strong>What's conspicuously absent:</strong> this is the list that matters.</p>
+
+      <ul>
+        <li><strong>Zero clinical trials involving transcription factor engineering of T cells.</strong> Not <em>ZSCAN20</em>. Not <em>JDP2</em>. Not c-Jun overexpression from 2019. Not BATF overexpression from 2021. After seven years of preclinical evidence that transcription factor engineering can overcome T cell exhaustion, there are zero trials. The CRISPR-edited CAR-T trials that exist &mdash; 28 of them &mdash; all edit checkpoint molecules or HLA genes. None edit transcription factors.</li>
+
+        <li><strong>Zero safety data on long-term TF deletion in T cells.</strong> The TET2/BATF3 warning is real. In 2023, a group at Memorial Sloan Kettering showed that disrupting TET2 in CAR-T cells caused clonal expansions driven by BATF3, with secondary somatic mutations. Transcription factor engineering has a safety question that hasn't been answered.</li>
+
+        <li><strong>No manufacturing pathway.</strong> Deleting a transcription factor in a research lab with retroviral CRISPR constructs is different from doing it in a GMP facility at scale. The paper doesn't address manufacturing. Nobody's paper does. This is the gap between a <em>Nature</em> paper and a clinical programme.</li>
+
+        <li><strong>No solid tumour in vivo model beyond melanoma.</strong> The tumour experiments use B16 melanoma, one of the most immunogenic mouse tumour models. Whether <em>ZSCAN20</em> deletion matters in pancreatic cancer, glioblastoma, or microsatellite-stable colorectal cancer &mdash; the tumours where checkpoint therapy fails most completely &mdash; is unknown.</li>
+
+        <li><strong>No combinatorial TF engineering tested.</strong> The paper's own discussion suggests future &ldquo;TF recipes&rdquo; combining gain-of-function (overexpress KLF6 for TRM) with loss-of-function (delete ZSCAN20 to prevent exhaustion). This combination hasn't been tested. The companion preprint from the same group shows that supraphysiologic cMyc expression can create a synthetic stem-effector hybrid state with 5,000-fold expansion. Whether that can be combined with exhaustion-selective deletion is an open question.</li>
+
+        <li><strong>The institutional bridge is thin.</strong> The Salk Institute has 25 clinical trials, all in circadian biology. UNC Lineberger has over 400 cancer trials and does run CAR-T programmes &mdash; co-authors Dotti and Savoldo operate a CAR-T programme at UNC &mdash; but none of their current trials involve transcription factor engineering. The bridge between the atlas discovery and clinical development exists, but it's a single plank, not a highway.</li>
+      </ul>
+
+      <p>Six significant gaps. And the field itself is fragmented &mdash; the atlas-building computational biologists, the CRISPR screen engineers, the CAR-T manufacturing groups, and the checkpoint immunotherapy clinicians are working in loosely connected but largely separate communities. The Kaech/Wang/Milner team bridges computational biology and immunology. The Dotti/Savoldo group at UNC bridges immunology and CAR-T manufacturing. Whether these bridges connect into a clinical programme remains to be seen.</p>
+
+      <h2>Three Ways This Gets to a Patient</h2>
+
+      <p>When you look at the gaps above and ask which ones you'd need to fill to reach a specific application &mdash; a clear ranking emerges. Each missing piece adds cost, and it adds it superlinearly.</p>
+
+      <p><strong>1. Engineered TIL therapy &mdash; 3 to 5 years.</strong> Tumour-infiltrating lymphocyte therapy is already in Phase 3 (Iovance's lifileucel). There are over 90 TIL trials recruiting right now, and several are already testing gene-edited TILs &mdash; PD-1 knockouts, SOCS1/Regnase-1 dual knockouts, metabolically armed variants. Adding a <em>ZSCAN20</em> or <em>JDP2</em> knockout to an existing TIL manufacturing process is the lowest-barrier entry point. The cells are already patient-derived, already expanded ex vivo, and the CRISPR editing step is already in the workflow. You'd need safety data and a manufacturing protocol amendment, not a new programme from scratch. Cost: $5&ndash;15M incremental. Gaps to fill: two.</p>
+
+      <p><strong>2. Next-generation CAR-T for solid tumours &mdash; 4 to 7 years.</strong> CAR-T therapy works in blood cancers but mostly fails in solid tumours, largely because of T cell exhaustion in the tumour microenvironment. Deleting exhaustion-selective transcription factors while preserving effector and memory programmes is exactly what solid tumour CAR-T needs. But this requires building on the existing CRISPR CAR-T infrastructure (currently 28 trials, all Phase 1/2, mostly haematologic) and extending it to solid tumours with TF editing &mdash; a combination nobody has attempted clinically. Cost: $20&ndash;50M. Gaps to fill: three or four.</p>
+
+      <p><strong>3. Combination with checkpoint blockade as a cell-free approach &mdash; 5 to 10 years.</strong> The paper shows synergy between TF deletion and anti-PD-1. A different question: could you achieve the same effect pharmacologically? If ZSCAN20 is a zinc-finger transcription factor and JDP2 is a Jun-family dimerisation protein, could small molecules or degraders target them without cell engineering? This would transform the approach from a cell therapy (expensive, complex, patient-specific) to a drug (scalable, combinable, broadly accessible). But transcription factors are notoriously difficult drug targets &mdash; often called &ldquo;undruggable&rdquo; &mdash; and the chemistry is at least a decade away. Cost: $100M+. Gaps to fill: five or six.</p>
+
+      <p>The pattern is the same one you see in every translational challenge. The fewer structural absences you need to resolve, the faster and cheaper the path. Each additional gap doesn't add cost linearly &mdash; it multiplies it.</p>
+
+      <h2>The $500,000 Experiment</h2>
+
+      <p>If I were advising the Kaech/Wang/Milner team &mdash; or the companies watching this space &mdash; there's one experiment that matters more than any other right now.</p>
+
+      <p>A GMP-compatible CRISPR protocol for <em>ZSCAN20</em> deletion in patient-derived TILs, tested for off-target effects, with a 28-day expansion and functional readout.</p>
+
+      <p>This isn't an ISO test you can run for $10,000. It's a manufacturing feasibility study. You'd need a GMP-grade guide RNA, an electroporation protocol validated for TIL-scale production, off-target sequencing (GUIDE-seq or CIRCLE-seq), and functional assays showing the edited TILs maintain effector function and resist exhaustion during the expansion period.</p>
+
+      <p>It costs roughly $300,000 to $500,000 and takes about six months. It's the gate between a publication and a programme.</p>
+
+      <p>If the edited TILs maintain or improve function during GMP-scale expansion, you have a differentiated product that slots into an existing clinical pathway &mdash; one where over 90 trials are already recruiting and one product is in Phase 3.</p>
+
+      <p>If they don't &mdash; if the transcription factor deletion causes unexpected problems at scale, or the off-target profile is unacceptable &mdash; you know before committing $50 million to a clinical programme.</p>
+
+      <p>Right now, nobody has run this experiment. A paper in <em>Nature</em>, a companion preprint showing synthetic T cell states with 5,000-fold expansion, cross-species validation, synergy with checkpoint blockade &mdash; and the simplest manufacturing feasibility study that would determine whether any of this has a clinical future hasn't been done.</p>
+
+      <p>That's what you find when you read beyond the headline.</p>
+
+      <hr>
+
+      <p><em>Greyzone Insights explores the space between what's published and what's possible.</em></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    Greyzone Insights
+  </footer>
+
+</body>
+</html>
