@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Map That Shouldn't Exist, and What It Reveals About What We Don't Know | Greyzone Insights</title>
-  <meta name="description" content="A team at the Weizmann Institute built a microscope that can see the electrostatic landscape inside a quantum material. The first image doesn't match the theory. I went looking for why.">
+  <meta name="description" content="A team at the Weizmann Institute built a microscope that can see the electrostatic landscape inside a quantum material. The first image doesn't match the theory. I went looking for what that means.">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -19,57 +19,57 @@
       <div class="post-meta">February 2026</div>
       <h1>The Map That Shouldn't Exist, and What It Reveals About What We Don't Know</h1>
 
-      <p>A paper landed in <em>Nature</em> at the start of February that I nearly scrolled past. The title was dense &mdash; something about imaging a potential using a single electron transistor &mdash; and the abstract was thick with condensed matter jargon. But one line stopped me: "the measured amplitude significantly exceeds theoretical predictions."</p>
+      <p>A paper landed in <em>Nature</em> at the start of February that I nearly scrolled past. The title was dense &mdash; something about imaging a potential using a single electron transistor &mdash; and the abstract was thick with condensed matter jargon. But one line stopped me: &ldquo;the measured amplitude significantly exceeds theoretical predictions.&rdquo;</p>
 
       <p>That's a polite way of saying the theory is wrong.</p>
 
-      <p>So I went and read the whole thing. Then I read the three papers it builds on, and the companion paper published the same day. What I found wasn't just a new measurement. It was a question hiding inside a calibration constant.</p>
+      <p>So I went and read the whole thing. Then I read the three papers it builds on, and the companion paper published the same day. What I found wasn't just a new measurement. It was a question hiding inside a calibration constant &mdash; and it connected to something I've been working on separately in ways I didn't expect.</p>
 
       <hr>
 
-      <p>The team behind this is led by Shahal Ilani at the Weizmann Institute. In 2023, his group published a paper introducing the <a href="https://doi.org/10.1038/s41586-022-05685-y">Quantum Twisting Microscope</a> &mdash; a scanning probe that creates pristine two-dimensional junctions at its tip and can twist them continuously. That paper has 118 citations and 37,000 accesses. It's already a foundational instrument in condensed matter physics.</p>
+      <p>The team behind this is led by Shahal Ilani at the Weizmann Institute. In 2023, his group published a paper introducing the <a href="https://doi.org/10.1038/s41586-022-05685-y">Quantum Twisting Microscope</a> (QTM) &mdash; a scanning probe that creates pristine two-dimensional junctions at its tip and can twist them continuously. That paper already has 118 citations and 37,000 accesses. It's a foundational instrument in condensed matter physics.</p>
 
-      <p>What they've done now is add a sensor to it &mdash; and the sensor is a single atom. More precisely: a single atomic defect in a thin crystal of tungsten diselenide. These defects occur naturally, scattered sparsely through the material. Each one acts as a quantum dot &mdash; a box that can hold exactly one extra electron. Bring a material close to the defect and its electrostatic potential shifts the dot's energy level. Track that shift as you scan, and you've got a map.</p>
+      <p>What they've done now is add a sensor to it &mdash; and the sensor is a single atom. More precisely: a single atomic defect in a thin crystal of tungsten diselenide (WSe<sub>2</sub>). These defects occur naturally, scattered sparsely through the material. Each one acts as a quantum dot &mdash; a box that can hold exactly one extra electron. Bring a material close to the defect and its electrostatic potential shifts the dot's energy level. Track that shift as you scan, and you've got a map.</p>
 
-      <p>The design is inverted. Most scanning probe microscopes put the sensor on the tip and scan it across a stationary sample. Here, they put the material they want to study on the tip and keep the defect stationary on the base. Sounds minor &mdash; but it means they can pick the best defect out of thousands. Most are too high-energy, too noisy, too close to other defects. They need a rare, low-energy one that sits alone and responds cleanly. The inverted geometry gives them that choice.</p>
+      <p>The design is inverted &mdash; and the inversion matters. Most scanning probe microscopes put the sensor on the tip and scan it across a stationary sample. Here, they put the material they want to study on the tip and keep the defect stationary on the base. Sounds minor (I thought so at first) &mdash; but it means they can pick the best defect out of thousands. Most are too high-energy, too noisy, too close to other defects. They need a rare, low-energy one that sits alone and responds cleanly. The inverted geometry gives them that choice.</p>
 
-      <p>The specs: 1 nanometre spatial resolution &mdash; a hundred times better than any existing single electron transistor microscope. Sensitivity of 5 microvolts per root-hertz, which translates to detecting the electric potential from a few millionths of a single electron charge. Operating temperature: 0.2 kelvin. One group. One instrument. Nobody else has one.</p>
+      <p>The specs are worth pausing on. Spatial resolution: 1 nanometre (a hundred times better than any existing single electron transistor microscope). Sensitivity: 5 microvolts per root-hertz &mdash; which translates to detecting the electric potential from a few millionths of a single electron charge. Operating temperature: 0.2 kelvin. One group. One instrument. Nobody else has one.</p>
 
       <hr>
 
-      <p>The system they chose to image first was graphene aligned to hexagonal boron nitride. If you're not in condensed matter, here's why that matters.</p>
+      <p>The system they chose to image first was graphene aligned to hexagonal boron nitride &mdash; and the reason that choice matters took me a while to fully appreciate.</p>
 
-      <p>Graphene is a single layer of carbon atoms arranged in a hexagonal lattice. Boron nitride has almost the same structure &mdash; same hexagonal layout, slightly larger spacing (about 1.8%). When you stack them, the mismatch between the two grids creates a larger periodic pattern called a moir&eacute; superlattice. You've seen the visual version of this &mdash; overlap two slightly mismatched grids and you get a slow-moving interference pattern. In this case, the interference pattern is real. It creates an electrostatic landscape &mdash; hills and valleys &mdash; that the electrons in the graphene have to move through.</p>
+      <p>Graphene is a single layer of carbon atoms arranged in a hexagonal lattice. Boron nitride (hBN) has almost the same structure &mdash; same hexagonal layout, slightly larger spacing (about 1.8% mismatch). When you stack them, the mismatch between the two grids creates a larger periodic pattern called a moir&eacute; superlattice. You've seen the visual version of this &mdash; overlap two slightly mismatched grids and you get a slow-moving interference pattern. In this case, the interference pattern is physical. It creates an electrostatic landscape &mdash; hills and valleys &mdash; that the electrons in the graphene have to move through.</p>
 
       <p>For over a decade, that landscape has been the foundation of an entire field. The <a href="https://doi.org/10.1126/science.1237240">Hofstadter butterfly</a>. Fractional quantum anomalous Hall states. Moir&eacute; superconductivity. Unconventional ferroelectricity. All of these depend on the shape and depth of the moir&eacute; potential. All of them were engineered on the assumption that theoretical models of that potential were correct.</p>
 
       <p>But nobody had ever directly measured the potential itself. It was always inferred &mdash; from how electrons moved through it, from optical signatures, from fitting models to data and seeing if the fit was good enough. Now there's an actual image.</p>
 
-      <p>The potential is about 60 millivolts deep. It has approximate C<sub>6</sub> symmetry &mdash; hexagonal, six-fold rotational. There are three high-symmetry stacking sites within each unit cell (labelled CB, CN, AA depending on how carbon atoms sit relative to the boron and nitrogen below), and the difference between the two minima is only about 4 millivolts. The potential barely changes when you add electrons &mdash; about 10% variation across filling factors zero to four. It's structural. Baked into the lattice geometry. Not something the electrons create. Something they live in.</p>
+      <p>The potential is about 60 millivolts deep. It has approximate C<sub>6</sub> symmetry &mdash; hexagonal, six-fold rotational. There are three high-symmetry stacking sites within each unit cell (labelled CB, CN, AA &mdash; depending on how the carbon atoms sit relative to the boron and nitrogen below), and the difference between the two minima is only about 4 millivolts. The potential barely changes when you add electrons (about 10% variation across filling factors zero to four). It's structural. Baked into the lattice geometry. Not something the electrons create. Something they live in.</p>
 
       <hr>
 
-      <p>Here's where it gets interesting.</p>
+      <p>Here's where it started getting interesting for me.</p>
 
       <p>The theory predicts roughly 30 millivolts. They measured 60. That's a factor of two, not a rounding error.</p>
 
       <p>But the shape is right. And the way it's right tells you something.</p>
 
-      <p>The moir&eacute; potential arises from three theoretical terms: a stacking potential (from the varying alignment between graphene and boron nitride), a deformation potential (from the stretching and compressing of carbon-carbon bonds as the lattice relaxes), and a pseudomagnetic field. Each of the first two terms has C<sub>3</sub> symmetry &mdash; three-fold, not six-fold. But their minima are inverted relative to each other. Where the stacking term is high, the deformation term is low, and vice versa. Add them together and the C<sub>3</sub> components cancel, leaving an approximately C<sub>6</sub>-symmetric total potential.</p>
+      <p>The moir&eacute; potential arises from three theoretical terms: a stacking potential (from the varying alignment between graphene and hBN), a deformation potential (from the stretching and compressing of carbon-carbon bonds as the lattice relaxes), and a pseudomagnetic field (which turns out to be smaller). Each of the first two terms has C<sub>3</sub> symmetry &mdash; three-fold, not six-fold. But their minima are inverted relative to each other. Where the stacking term is high, the deformation term is low, and vice versa. Add them together and the C<sub>3</sub> components cancel, leaving an approximately C<sub>6</sub>-symmetric total potential.</p>
 
-      <p>That cancellation is suspiciously clean. Two competing mechanisms, each breaking the hexagonal symmetry in different directions, nearly perfectly restoring it when summed. The system is producing more order than the sum of its parts would predict. It's selecting &mdash; through physics, not design &mdash; for a minimum-entropy configuration. That's not a prediction of the theory. It's an observation the theory happens to reproduce qualitatively, but gets quantitatively wrong by a factor of two.</p>
+      <p>That cancellation is suspiciously clean. Two competing mechanisms &mdash; each breaking the hexagonal symmetry in different directions &mdash; nearly perfectly restoring it when summed. The system is producing more order than the sum of its parts would suggest. It's selecting (through physics, not design) for a minimum-entropy configuration. That's not a prediction of the theory. It's an observation the theory happens to reproduce qualitatively, but gets quantitatively wrong by a factor of two.</p>
 
-      <p>And this is where I started pulling on a thread.</p>
+      <p>I kept coming back to that. Not the amplitude &mdash; the symmetry. Two lower-symmetry terms cancelling to produce higher symmetry. The system imposing coherence on itself.</p>
 
       <hr>
 
-      <p>The entire 60 millivolt number comes from a single scaling constant.</p>
+      <p>But here's the thing I couldn't stop thinking about &mdash; the entire 60 millivolt number comes from a single scaling constant.</p>
 
-      <p>Here's how the measurement works. As they scan the tip across the defect, the zero-bias Coulomb blockade peak shifts &mdash; the gate voltage needed to bring the quantum dot into resonance changes with position. That gate voltage shift is what they actually measure. To convert it into a potential, they use a linear relation: the peak position equals a constant <em>c</em> times the local potential, plus an offset.</p>
+      <p>Here's how the measurement works. As they scan the tip across the defect, the zero-bias Coulomb blockade peak shifts &mdash; the gate voltage needed to bring the quantum dot into resonance changes with position. That gate voltage shift is what they actually measure. To convert it into a potential &mdash; the thing they want &mdash; they use a linear relation: the peak position equals a constant <em>c</em> times the local potential, plus an offset.</p>
 
       <p>Everything rides on <em>c</em>.</p>
 
-      <p>That constant comes from the electrostatic model of the junction. It depends on where the defect sits within the tungsten diselenide barrier &mdash; specifically the ratio of its distance to the top and bottom electrodes (a lever arm they call &alpha;). It depends on the capacitive coupling between the gates and the graphene layers. It depends on the dielectric constant of the boron nitride (they use &kappa; = 3.5, giving a graphene RPA screening constant of about 2.0). And it depends on a device-specific contact resistance that produces a threshold voltage of about 65 millivolts &mdash; below which the bias drops across the contact rather than the junction. All of this feeds into supplementary information sections 2 and 3.</p>
+      <p>That constant comes from the electrostatic model of the junction. It depends on where the defect sits within the WSe<sub>2</sub> barrier &mdash; specifically the ratio of its distance to the top and bottom electrodes (a lever arm they call &alpha;). It depends on the capacitive coupling between the gates and the graphene layers. It depends on the dielectric constant of the boron nitride (they use &kappa; = 3.5, giving a graphene RPA screening constant of about 2.0). And it depends on a device-specific contact resistance that produces a threshold voltage of about 65 millivolts &mdash; below which the bias drops across the contact rather than the junction. All of this feeds into supplementary information (sections 2 and 3 &mdash; easy to miss).</p>
 
       <p>If <em>c</em> is wrong by a factor of two &mdash; if the lever arm is miscalibrated, if the effective dielectric constant is off, if the contact resistance is distorting the electrostatic model &mdash; then the shape is perfectly correct, the symmetry analysis holds, and the amplitude is a calibration artefact. The theory isn't incomplete. The ruler needs checking.</p>
 
@@ -79,35 +79,49 @@
 
       <hr>
 
-      <p>Think about what's actually missing here. Not just from the paper &mdash; from the entire programme.</p>
+      <p>And that gap &mdash; the missing calibration &mdash; is the one that determines everything else. They've measured one system (graphene on hBN &mdash; the simplest possible moir&eacute; interface). Only one group in the world can do this measurement. Nobody can independently verify the result, challenge the calibration, or extend it to different systems. No twisted bilayer graphene (where all the exotic physics lives). No transition metal dichalcogenide moir&eacute;s. No multilayer stacks. The bottleneck isn't coordination between research communities &mdash; it's replication. The capability is concentrated in a single lab.</p>
 
-      <p>They've measured one system &mdash; graphene on boron nitride. The simplest possible moir&eacute; interface. No twisted bilayer graphene (where all the exotic physics lives). No transition metal dichalcogenide moir&eacute;s. No multilayer stacks. The instrument is capable. The samples haven't been mounted yet.</p>
+      <p>So here's the experiment that matters. Fabricate a lithographically defined gate pattern &mdash; a structure with a calculable electrostatic potential, designed from geometry and material properties you can independently verify. Image it with the atomic SET. Compare the measured potential to the calculated one. If they match, <em>c</em> is correct, and the factor-of-two discrepancy means the theory really is incomplete. Every model of every moir&eacute; system built on the graphene/hBN interface needs revision &mdash; the fractional quantum anomalous Hall effect, moir&eacute; superconductivity, everything engineered on this platform was built on a potential landscape twice as deep as anyone thought.</p>
 
-      <p>Only one group in the world can do this measurement. The Weizmann Institute built the QTM. Nobody else has one. That means nobody can independently verify the result, challenge the calibration, or extend it to different systems. The bottleneck here isn't coordination between research communities (the way it was with compleximers). It's replication. The capability is concentrated in a single lab.</p>
-
-      <p>There are no magnetic field potential maps &mdash; they showed Landau levels in spectroscopy mode, but what does the potential landscape look like under a 5-tesla field? There are no time-resolved measurements. The potential is static in every image. What happens at a phase transition &mdash; when the electronic ground state restructures abruptly? Moir&eacute; systems exhibit cascade transitions at specific fillings. The atomic SET has the resolution and sensitivity to watch one happen in real space. Nobody's done it.</p>
-
-      <p>And there's no independent calibration of the scaling constant against a known potential.</p>
-
-      <hr>
-
-      <p>That last gap is the one that determines everything else.</p>
-
-      <p>Here's the experiment. Fabricate a lithographically defined gate pattern &mdash; a structure with a calculable electrostatic potential, designed from geometry and material properties you can independently verify. Image it with the atomic SET. Compare the measured potential to the calculated one. If they match, <em>c</em> is correct, and the factor-of-two discrepancy in the moir&eacute; measurement means the theory really is incomplete. Every model of every moir&eacute; system built on the graphene/hBN interface needs revision. That's a big deal &mdash; it means the fractional quantum anomalous Hall effect, moir&eacute; superconductivity, and every other state engineered on this platform was built on a potential landscape twice as deep as anyone thought.</p>
-
-      <p>If they don't match &mdash; if the measured potential on the known structure comes out wrong by a factor related to the discrepancy &mdash; then <em>c</em> is off, and the moir&eacute; potential might well be 30 millivolts, exactly as theory predicts. The instrument works beautifully for imaging shapes and symmetries, but its absolute scale needs recalibrating. That's not a failure. That's metrology. But it changes the conclusion from "theory is incomplete" to "measurement is uncalibrated," and those are very different statements.</p>
+      <p>If they don't match &mdash; if the measured potential on the known structure comes out wrong by a factor related to the discrepancy &mdash; then <em>c</em> is off, and the moir&eacute; potential might well be 30 millivolts, exactly as theory predicts. The instrument works beautifully for imaging shapes and symmetries, but its absolute scale needs recalibrating. That's not a failure &mdash; that's metrology. But it changes the conclusion from &ldquo;theory is incomplete&rdquo; to &ldquo;measurement is uncalibrated,&rdquo; and those are very different statements.</p>
 
       <p>Either answer matters for every measurement this instrument will ever make.</p>
 
       <hr>
 
-      <p>There's a deeper question underneath all of this, and it's the one I keep coming back to.</p>
+      <p>There's a reason this paper hit differently for me. I've been working on something &mdash; separate project, different context &mdash; that asks a structurally similar question.</p>
 
-      <p>The emergent C<sub>6</sub> symmetry &mdash; the way two competing C<sub>3</sub>-symmetric mechanisms cancel to produce near-perfect six-fold order &mdash; is the most surprising result in this paper. It's not the amplitude. It's the symmetry. And it raises a question nobody in the moir&eacute; community seems to be asking: is there an optimal lattice geometry that maximises this coherence?</p>
+      <p>I've been modelling current flow through constrained geometries on conducting sheets. You define a geometry (a flat conducting surface with obstacles cut out of it), apply a voltage across the corners, and solve for how the current distributes itself. The result is a four-panel picture &mdash; the sheet geometry, the electric potential across it, the current density (on a log scale, because the variations are enormous), and the streamlines showing where the current actually flows.</p>
 
-      <p>This paper uses naturally aligned graphene on boron nitride &mdash; 1.8% lattice mismatch. But the QTM can scan twist angles continuously. You could, in principle, map the emergent symmetry as a function of geometry. Vary the mismatch. Change the number of layers. Look for the configuration that produces the cleanest cancellation &mdash; the most symmetric, lowest-entropy potential landscape.</p>
+      <figure>
+        <img src="../images/graphene_demo.png" alt="Four-panel simulation showing current flow through a conducting sheet with rectangular obstacles: sheet geometry, electric potential, current density on log scale, and current flow streamlines" style="width: 100%; max-width: 680px;">
+        <figcaption>Current flow through a constrained conducting geometry. Top left: the sheet with obstacles. Top right: the resulting potential landscape. Bottom left: current density. Bottom right: how the current finds its path.</figcaption>
+      </figure>
 
-      <p>If that configuration exists &mdash; and the fact that C<sub>6</sub> emerges so cleanly from competing C<sub>3</sub> terms at one specific geometry suggests it might &mdash; then it tells you something about how information structures itself in these systems. Not through design, but through the geometry of the lattice selecting for maximum order. The twist angle that produces the most coherent potential is the twist angle you want for building quantum states. And right now, nobody's looking for it, because nobody knew the coherence was this clean until this paper showed them.</p>
+      <p>The obstacles create a topology. The current has to navigate it &mdash; find paths around the barriers, concentrate where the channels narrow, spread out where the geometry opens up. There's a cost to that navigation &mdash; and it depends on the complexity of the topology. In the framework I've been developing, that cost follows a specific relation: a geometry tax that scales as (q+1)/q, where q captures the topological complexity of the obstacles the current has to route around. Higher complexity (more obstacles, narrower channels) means a steeper tax. Simpler topology means cheaper flow.</p>
+
+      <p>When you simplify the topology &mdash; reduce the number of obstacles, open wider channels &mdash; the current finds cleaner paths. The streamlines become more ordered. The geometry tax drops.</p>
+
+      <figure>
+        <img src="../images/graphene_optimized.png" alt="Four-panel simulation showing current flow through an optimized conducting sheet with a single obstacle: cleaner streamlines and more uniform current distribution" style="width: 100%; max-width: 680px;">
+        <figcaption>Same simulation, simplified topology. Single obstacle. The current finds the cleanest path the geometry allows.</figcaption>
+      </figure>
+
+      <p>I'm not claiming these are the same system. They're not &mdash; one is a classical current on a macroscopic sheet, the other is quantum electrons in a moir&eacute; superlattice at 200 millikelvin. But the structural question is the same: what geometry maximises coherent flow? What topology lets information (or current, or electrons) find optimal paths through a landscape of constraints?</p>
+
+      <p>And that's exactly the question this paper makes measurable for the first time.</p>
+
+      <p>The moir&eacute; potential <em>is</em> a constrained geometry. The valleys are channels. The hills are obstacles. Electrons navigate it the way current navigates a conducting sheet with holes cut in it. And the C<sub>6</sub> symmetry emerging from competing C<sub>3</sub> terms &mdash; that suspiciously clean cancellation &mdash; looks like the lattice selecting for minimum-cost topology. The geometry that produces the most coherent potential landscape. My simulations show something similar from the other direction: when you optimise the obstacle geometry, the current self-organises into the most ordered flow pattern the topology permits.</p>
+
+      <p>The scaling constant determines whether that landscape is twice as deep as everyone thought. If it is, the geometry tax on electrons navigating the moir&eacute; potential is different from everything the models assumed. The cost of coherence in these systems &mdash; how hard it is for quantum states to maintain order as they move through the landscape &mdash; changes.</p>
+
+      <hr>
+
+      <p>There's a deeper question underneath all of this, and it's the one I keep circling back to.</p>
+
+      <p>The QTM can scan twist angles continuously. You could &mdash; in principle &mdash; map the emergent symmetry as a function of geometry. Vary the mismatch. Change the number of layers. Look for the configuration that produces the cleanest cancellation (the most symmetric, lowest-entropy potential landscape). The twist angle that produces the most coherent potential is the twist angle you want for building quantum states.</p>
+
+      <p>Right now, nobody's looking for it &mdash; because nobody knew the coherence was this clean until this paper showed them.</p>
 
       <p>For a decade, moir&eacute; engineering has been building quantum states on a potential landscape nobody could see. Now there's a photograph. And the photograph either shows a landscape twice as deep as the blueprint &mdash; or a camera that needs calibrating. The scaling constant is the fulcrum. One number, buried in the supplementary material, determines which story this is.</p>
 
